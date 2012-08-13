@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+	, app = require('../index.js')
+	, sys = require('util');
+	
+program
+	.version('0.0.1')
+	.usage('[command] <args>')
+	.option('-p, --port', 'specify the port [9000]', Number, 8128)
+
+program
+  .command('watch [projectdir]')
+  .description('run server for live jss update')
+  .action(function (env) {
+		var projectPath = env || process.cwd();
+		try {
+			app.run(projectPath, program.port);
+		} catch (ex) {
+			console.log('ERROR : %s', ex.message);
+		}
+  });
+
+program.parse(process.argv);
