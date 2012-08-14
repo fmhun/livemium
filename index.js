@@ -7,6 +7,7 @@ exports.livemium = lm;
 
 exports.run = run;
 
+
 function run (projectPath, port) {
 	console.log('watching project %s', projectPath);
 	var server  = new lm.Server()
@@ -14,13 +15,7 @@ function run (projectPath, port) {
 		, platforms = ['android', 'iphone']
 		, resourcesPath = projectPath + '/Resources'
 		, tiAppXmlPath = projectPath + '/tiapp.xml'
-		, cssc;
-	
-	if (fs.existsSync(tiAppXmlPath)) {
-		cssc = new lm.CssCompiler(projectPath)
-	} else {
-		throw new Error(projectPath + ' doesn\'t look like a valid Titanium project');
-	}
+		, cssc = new lm.CssCompiler(projectPath);
 	
 	// Create a jss snapshot and send it to registered client.
 	server.on('register', function (stream) {
