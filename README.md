@@ -4,7 +4,7 @@
 
 Livemium can be installed from `npm` by running the `ìnstall` command in a terminal. It's recommanded to use a gloabal install with by adding option `-g` :
 	 
-	 $ nmp install livemium -g
+	 $ npm install livemium -g
 
 ##How it works
 
@@ -15,7 +15,7 @@ Then, run the livemium server to watch for jss changes in your Titanium project,
 
 	$ livemium watch [titanium/project/path] -p 8160
 
-The `p` option is the port number your server will listen to.
+The `-p` option is the port number your server will listen to.
 
 #Contribute
 
