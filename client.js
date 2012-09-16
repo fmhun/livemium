@@ -156,7 +156,14 @@ TiCollection.prototype.freezeJsCss = function () {
 				Ti.API.log('freeze : '+object+'.'+property);
 			}
 		});
+		
+		Ti.API.log(object.frozenCss.length);
 	});
+	
+	// WTF !!!!!!!!!!!!!!!!!!!
+	_.each(this.data, function (obj) {
+		Ti.API.log(obj.frozenCss.length);
+	})
 	
 	return this;
 } 
