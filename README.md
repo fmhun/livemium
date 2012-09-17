@@ -2,11 +2,9 @@
 
 ##Installation
 
-Livemium can be installed from `npm` by running the `ìnstall` command in a terminal. It's recommanded to use a gloabal install with by adding option `-g` :
+Livemium can be installed from `npm` by running the `ìnstall` command in a terminal. It's recommanded to use a gloabal install by adding option `-g` :
 	 
 	 $ npm install livemium -g
-
-##How it works
 
 ##Usage
 
@@ -17,11 +15,9 @@ Then, run the livemium server to watch for jss changes in your Titanium project,
 
 The `-p` option is the port number your server will listen to.
 
-#Contribute
-
 #Contributors
 
-#Credits
++ Antoine Joulie
 
 #License
 
