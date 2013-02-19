@@ -2,13 +2,13 @@
 
 ##Installation
 
-Livemium can be installed from `npm` by running the `ìnstall` command in a terminal. It's recommanded to use a gloabal install by adding option `-g` :
+Livemium can be installed from `npm` by running the `ìnstall` command from the terminal. It is recommanded to use a global installation by adding the option `-g` :
 	 
 	 $ npm install livemium -g
 
 ##Usage
 
-Livemium provide a command line tool to start a server that watch your titanium project and send new JSS to connected clients.
+Livemium provides a command line tool to start a server that watches your titanium project and sends new JSS to connected clients.
 Then, run the livemium server to watch for jss changes in your Titanium project, you need to specify the path of your project where the tiapp.xml is located :
 
 	$ livemium watch [titanium/project/path] -p 8160
